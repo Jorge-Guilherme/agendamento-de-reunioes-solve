@@ -1,0 +1,9 @@
+com/meetingscheduler/solver/AgendamentoConstraintProvider.class
+com/meetingscheduler/solver/MeetingScheduler.class
+com/meetingscheduler/data/ExcelDataReader$MeetingData.class
+com/meetingscheduler/data/ExcelDataReader.class
+com/meetingscheduler/domain/Participante.class
+com/meetingscheduler/domain/Sala.class
+com/meetingscheduler/MeetingSchedulerApp.class
+com/meetingscheduler/domain/AgendamentoSolution.class
+com/meetingscheduler/domain/Reuniao.class

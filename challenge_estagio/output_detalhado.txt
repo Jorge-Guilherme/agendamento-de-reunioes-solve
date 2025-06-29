@@ -1,0 +1,117 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.meetingscheduler:meeting-scheduler >---------------
+[INFO] Building Meeting Scheduler with OptaPlanner 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.5.1:java (default-cli) @ meeting-scheduler ---
+=== SOLVER DE AGENDAMENTO DE REUNIÕES ===
+Arquivo: salas_50_reunioes.xlsx
+
+Lendo dados do arquivo Excel...
+Sala encontrada: S 1 (capacidade: 30)
+Sala encontrada: S 2 (capacidade: 20)
+Sala encontrada: S 3 (capacidade: 16)
+Sala encontrada: S 4 (capacidade: 14)
+Sala encontrada: S 5 (capacidade: 12)
+Dados carregados:
+- Salas: 5
+- Reuniões: 49
+- Time slots: 200
+
+Salas disponíveis:
+- S 1 (capacidade: 30)
+- S 2 (capacidade: 20)
+- S 3 (capacidade: 16)
+- S 4 (capacidade: 14)
+- S 5 (capacidade: 12)
+
+Primeiras 5 reuniões:
+- Strategize B2B (45 min, 3 participantes)
+- Fast track e-business (120 min, 3 participantes)
+- Cross sell virtualization (60 min, 3 participantes)
+- Profitize multitasking (15 min, 3 participantes)
+- Transform one stop shop (120 min, 3 participantes)
+
+Iniciando solução do problema de agendamento...
+Salas: 5
+Reuniões: 49
+Time slots: 200
+16:05:29.701 [com.meetingscheduler.MeetingSchedulerApp.main()] INFO  o.o.core.impl.solver.DefaultSolver - Solving started: time spent (36), best score (-98init/0hard/0soft), environment mode (REPRODUCIBLE), move thread count (NONE), random (JDK with seed 0).
+16:05:31.228 [com.meetingscheduler.MeetingSchedulerApp.main()] INFO  o.o.c.i.c.DefaultConstructionHeuristicPhase - Construction Heuristic phase (0) ended: time spent (1563), best score (0hard/901soft), score calculation speed (32152/sec), step total (49).
+16:10:29.666 [com.meetingscheduler.MeetingSchedulerApp.main()] INFO  o.o.c.i.l.DefaultLocalSearchPhase - Local Search phase (1) ended: time spent (300001), best score (0hard/1338soft), score calculation speed (9892/sec), step total (76852).
+16:10:29.673 [com.meetingscheduler.MeetingSchedulerApp.main()] INFO  o.o.core.impl.solver.DefaultSolver - Solving ended: time spent (300002), best score (0hard/1338soft), score calculation speed (10004/sec), phase total (2), environment mode (REPRODUCIBLE), move thread count (NONE).
+Solução encontrada!
+Score: 0hard/1338soft
+É viável: true
+
+=== SOLUÇÃO DE AGENDAMENTO ===
+Score: 0hard/1338soft
+É viável: true
+
+Reuniões agendadas:
+Título | Duração | Sala | Início | Fim | Participantes
+-------|---------|------|--------|-----|--------------
+Engage braindumps              | 240 min | S 2  | 30/06 08:00 | 30/06 12:00 | 3 part.
+Cross sell braindumps          | 240 min | S 1  | 30/06 08:30 | 30/06 12:30 | 3 part.
+Engage data mining             | 120 min | S 2  | 30/06 12:30 | 30/06 14:30 | 3 part.
+Cross sell data mining         |  90 min | S 1  | 30/06 12:45 | 30/06 14:15 | 3 part.
+Cross sell one stop shop       |  45 min | S 1  | 30/06 15:15 | 30/06 16:00 | 3 part.
+Downsize B2B                   |  45 min | S 1  | 30/06 16:30 | 30/06 17:15 | 3 part.
+Downsize data mining           | 240 min | S 1  | 30/06 17:30 | 30/06 21:30 | 3 part.
+Engage policies                | 240 min | S 2  | 30/06 17:45 | 30/06 21:45 | 3 part.
+Downsize policies              |  45 min | S 1  | 01/07 08:15 | 01/07 09:00 | 3 part.
+Cross sell multitasking        | 120 min | S 3  | 01/07 09:45 | 01/07 11:45 | 3 part.
+Downsize synergies             |  90 min | S 1  | 01/07 11:00 | 01/07 12:30 | 3 part.
+Downsize user experience       |  45 min | S 1  | 01/07 12:45 | 01/07 13:30 | 3 part.
+Fast track braindumps          |  15 min | S 1  | 01/07 13:45 | 01/07 14:00 | 3 part.
+Engage synergies               |  45 min | S 1  | 01/07 14:00 | 01/07 14:45 | 3 part.
+Fast track e-business          | 120 min | S 1  | 01/07 15:00 | 01/07 17:00 | 3 part.
+Fast track multitasking        | 240 min | S 1  | 01/07 17:15 | 01/07 21:15 | 3 part.
+Fast track one stop shop       |  60 min | S 1  | 02/07 08:00 | 02/07 09:00 | 3 part.
+Fast track virtualization      |  15 min | S 1  | 02/07 09:30 | 02/07 09:45 | 3 part.
+On board B2B                   |  45 min | S 1  | 02/07 10:45 | 02/07 11:30 | 3 part.
+On board e-business            |  90 min | S 1  | 02/07 12:00 | 02/07 13:30 | 3 part.
+Engage user experience         | 120 min | S 2  | 02/07 12:00 | 02/07 14:00 | 3 part.
+On board synergies             | 120 min | S 1  | 02/07 14:00 | 02/07 16:00 | 3 part.
+On board user experience       |  60 min | S 1  | 02/07 16:15 | 02/07 17:15 | 3 part.
+On board virtualization        | 240 min | S 1  | 02/07 17:30 | 02/07 21:30 | 3 part.
+Profitize data mining          | 240 min | S 2  | 02/07 17:45 | 02/07 21:45 | 3 part.
+Profitize braindumps           |  45 min | S 1  | 03/07 08:00 | 03/07 08:45 | 3 part.
+Profitize multitasking         |  15 min | S 1  | 03/07 09:00 | 03/07 09:15 | 3 part.
+Profitize one stop shop        |  15 min | S 1  | 03/07 09:30 | 03/07 09:45 | 3 part.
+Profitize policies             |  60 min | S 1  | 03/07 10:00 | 03/07 11:00 | 3 part.
+Transform braindumps           |  90 min | S 2  | 03/07 10:15 | 03/07 11:45 | 3 part.
+Ramp up B2B                    |  45 min | S 1  | 03/07 12:00 | 03/07 12:45 | 3 part.
+Cross sell virtualization      |  60 min | S 3  | 03/07 12:45 | 03/07 13:45 | 3 part.
+Ramp up e-business             |  15 min | S 1  | 03/07 12:45 | 03/07 13:00 | 3 part.
+Ramp up policies               |  15 min | S 1  | 03/07 13:45 | 03/07 14:00 | 3 part.
+Ramp up synergies              |  15 min | S 1  | 03/07 14:30 | 03/07 14:45 | 3 part.
+Ramp up user experience        |  90 min | S 1  | 03/07 16:00 | 03/07 17:30 | 3 part.
+Transform data mining          | 120 min | S 2  | 03/07 16:30 | 03/07 18:30 | 3 part.
+Reinvigorate B2B               |  15 min | S 1  | 03/07 17:45 | 03/07 18:00 | 3 part.
+Reinvigorate e-business        |  30 min | S 1  | 04/07 08:45 | 04/07 09:15 | 3 part.
+Reinvigorate user experience   |  60 min | S 1  | 04/07 09:30 | 04/07 10:30 | 3 part.
+Reinvigorate virtualization    |  15 min | S 1  | 04/07 10:45 | 04/07 11:00 | 3 part.
+Strategize B2B                 |  45 min | S 1  | 04/07 11:15 | 04/07 12:00 | 3 part.
+Strategize e-business          |  30 min | S 1  | 04/07 12:45 | 04/07 13:15 | 3 part.
+Transform one stop shop        | 120 min | S 2  | 04/07 13:30 | 04/07 15:30 | 3 part.
+Strategize multitasking        |  90 min | S 1  | 04/07 13:30 | 04/07 15:00 | 3 part.
+Transform policies             |  90 min | S 2  | 04/07 15:45 | 04/07 17:15 | 3 part.
+Strategize one stop shop       |  45 min | S 1  | 04/07 16:15 | 04/07 17:00 | 3 part.
+Strategize virtualization      | 240 min | S 1  | 04/07 17:45 | 04/07 21:45 | 3 part.
+Transform synergies            | 240 min | S 2  | 04/07 17:45 | 04/07 21:45 | 3 part.
+
+=== ESTATÍSTICAS ===
+Total de reuniões: 49
+Reuniões agendadas: 49
+Reuniões não agendadas: 0
+Taxa de sucesso: 100,0%
+16:10:29.689 [com.meetingscheduler.MeetingSchedulerApp.main()] INFO  o.o.core.impl.solver.DefaultSolver - Terminating solver early.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  05:01 min
+[INFO] Finished at: 2025-06-29T16:10:29-03:00
+[INFO] ------------------------------------------------------------------------
